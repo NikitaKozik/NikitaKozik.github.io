@@ -1,0 +1,1 @@
+function toggleMobNav(){const e=document.getElementsByClassName("navigation-hamburger")[0],t=document.querySelector(".nav-links");e.addEventListener("click",e=>{t.classList.toggle("show")})}toggleMobNav();
