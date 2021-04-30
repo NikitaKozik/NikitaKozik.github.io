@@ -325,6 +325,11 @@ p {
         -ms-flex-pack: start;
             justify-content: flex-start;
     background: #444444;
+    max-height: calc(100vh - 80px);
+    min-height: 33.75rem;
+    overflow-y: scroll;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
   }
 
   .nav-links li {
