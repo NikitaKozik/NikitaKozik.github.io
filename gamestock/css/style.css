@@ -99,6 +99,8 @@ li:first-of-type:active .dropdown-container {
 
 .mega-dropdown {
   margin: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 1.5rem;
   width: 62.5rem;
   background-image: -webkit-gradient(linear, left top, right top, from(#8e70af), to(#48bfed));
@@ -359,6 +361,19 @@ p {
     width: 100%;
   }
 
+  .mega-dropdown nav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  .mega-dropdown ul {
+    margin-bottom: 1.5rem;
+  }
+
   .cart {
     position: fixed;
     bottom: 0;
@@ -404,6 +419,13 @@ p {
   }
 }
 
+@media (max-width: 48em) {
+  .mega-dropdown ul {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
 @media (max-width: 30em) {
   .banner {
     margin: 2rem 0;
@@ -422,6 +444,13 @@ p {
 
   .container {
     width: calc(min(95%, 73.125rem));
+  }
+}
+
+@media (max-width: 20em) {
+  .mega-dropdown ul {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
