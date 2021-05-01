@@ -11,6 +11,14 @@ function toggleMobNav() {
 
     });
 
+    window.addEventListener('click', (e)=> {
+        if (!nav.contains(e.target) && !navButton.contains(e.target)) {
+            nav.classList.remove('mobile');
+            e.preventDefault();
+            e.stopPropagation();
+        }
+    });
+
 
     
 
