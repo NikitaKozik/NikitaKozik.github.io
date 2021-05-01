@@ -334,7 +334,7 @@ p {
   .nav-links.mobile {
     top: 5.625rem;
     position: fixed;
-    height: calc(90% - 5.625rem);
+    max-height: calc(90% - 5.625rem);
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     display: -webkit-box;
