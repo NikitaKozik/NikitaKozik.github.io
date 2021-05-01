@@ -12,7 +12,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: pink;
+  background-color: #333333;
   color: #e9e9e9;
   font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
@@ -287,6 +287,50 @@ p {
   padding: 0;
 }
 
+@media (max-width: 90em) {
+  .banner img {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 80em) {
+  .banner {
+    margin: 4rem 0;
+    padding: 3rem;
+  }
+
+  .banner div {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .banner-msg-title,
+  .banner p {
+    font-size: 2.2rem;
+    line-height: 1.1;
+    letter-spacing: 0rem;
+  }
+
+  .banner p {
+    font-size: 2rem;
+    padding: 0;
+    margin: 1rem 0;
+  }
+
+  .banner img {
+    background: none;
+    border-radius: none;
+    position: static;
+    margin: 0;
+    display: block;
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 64em) {
   .navigation {
     margin: 0;
@@ -372,17 +416,12 @@ p {
     margin-bottom: 1.5rem;
   }
 
+  .container {
+    width: calc(min(95%, 73.125rem));
+  }
+
   .banner {
     padding: 2.8125rem 1.8rem;
-  }
-
-  .banner div {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
-
-  .banner div:nth-of-type(2) {
-    display: none;
   }
 }
 
@@ -430,22 +469,36 @@ p {
     -ms-flex-preferred-size: 33%;
         flex-basis: 33%;
   }
+
+  .banner-msg-title {
+    font-size: 3.6rem;
+  }
+
+  .banner div {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+
+  .banner div:nth-of-type(2) {
+    display: none;
+  }
 }
 
 @media (max-width: 30em) {
   .banner {
     margin: 2rem 0;
-    padding: 0.5rem 0.5rem;
+    padding: 1rem;
   }
 
   .banner-msg-title,
   .banner p {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     line-height: 1;
   }
 
   .banner p {
-    padding: 1rem 0;
+    font-size: 1.3rem;
+    padding: 0.3rem;
   }
 
   .container {
@@ -464,6 +517,15 @@ p {
   .mega-dropdown ul {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+
+  html {
+    font-size: 14px;
+  }
+
+  .banner-msg-title {
+    font-size: 1.7rem;
+    line-height: 1;
   }
 }
 
