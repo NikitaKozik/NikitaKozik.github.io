@@ -50,6 +50,7 @@ header {
 }
 
 .nav-links {
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -323,18 +324,19 @@ p {
         -ms-flex-pack: start;
             justify-content: flex-start;
     background: #444444;
-    max-height: calc(100vh - 80px);
-    min-height: 33.75rem;
-    overflow-y: scroll;
     width: 100%;
-    -webkit-overflow-scrolling: touch;
   }
 
   .nav-links li {
     width: 100%;
   }
 
-  .nav-links.show {
+  .nav-links.mobile {
+    top: 5.625rem;
+    position: fixed;
+    height: calc(90% - 5.625rem);
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

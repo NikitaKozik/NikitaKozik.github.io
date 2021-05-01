@@ -4,8 +4,14 @@ function toggleMobNav() {
           nav = document.querySelector('.nav-links');
 
     navButton.addEventListener('click', (e)=> {
-        nav.classList.toggle('show');
+        nav.classList.toggle('mobile');
+
+        e.preventDefault();
+        e.stopPropagation();
+
     });
+
+
     
 
 }
