@@ -221,7 +221,7 @@ li:first-of-type:active .dropdown-container {
 }
 
 .promo {
-  background: url("/images/promo.jpg") no-repeat center;
+  background: url("/gamestock/images/promo.jpg") no-repeat center;
   background-size: cover;
   width: 100%;
 }
@@ -281,7 +281,7 @@ li:first-of-type:active .dropdown-container {
   border-radius: 20px;
   background-color: rgba(192, 192, 192, 0.5);
   background-size: auto 100%;
-  background-image: url("/images/banner.svg");
+  background-image: url("/gamestock/images/banner.svg");
   background-position: center;
   background-repeat: no-repeat;
   width: 67.5%;
@@ -456,7 +456,7 @@ li:first-of-type:active .dropdown-container {
   position: absolute;
   top: 0;
   left: 50%;
-  background-image: url("/images/about-us.jpg");
+  background-image: url("/gamestock/images/about-us.jpg");
   background-repeat: no-repeat;
   background-size: auto 80%;
   background-position: bottom center;
