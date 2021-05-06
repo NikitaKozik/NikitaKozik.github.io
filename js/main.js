@@ -1,27 +1,42 @@
-function toggleMobNav() {
+window.onload = () => {
+//dropdown
+function toggleDropdown() {
 
-    const navButton = document.getElementsByClassName('navigation-hamburger')[0],
-        nav = document.querySelector('.nav-links');
+    const toggleButton = document.querySelector('.open-dropdown'),
+          toggleContainer = document.querySelector('.dropdown');
 
-    navButton.addEventListener('click', (e) => {
-        nav.classList.toggle('mobile');
-
+    toggleButton.addEventListener('click', (e) => {
+        toggleContainer.classList.toggle('show');
+        toggleButton.classList.add('active');
         e.preventDefault();
         e.stopPropagation();
-
     });
 
     window.addEventListener('click', (e) => {
-        if (!nav.contains(e.target) && !navButton.contains(e.target)) {
-            nav.classList.remove('mobile');
+        if (!toggleContainer.contains(e.target) && !toggleButton.contains(e.target)) {
+            toggleContainer.classList.remove('show');
+            toggleButton.classList.remove('active');
             e.preventDefault();
             e.stopPropagation();
         }
     });
 
-
-
-
 }
 
-toggleMobNav();
+toggleDropdown();
+
+//crop card title 
+
+function cropTitle() {
+    const cardTitle = document.querySelectorAll('.card-title');
+
+    for(let i = 0; i < cardTitle.length; i++) {
+        if(cardTitle[i].innerText.length > 60) {
+            cardTitle[i].textContent =  cardTitle[i].innerText.substring(0,60) + '...';
+        }
+    }
+}
+
+cropTitle();
+
+};
